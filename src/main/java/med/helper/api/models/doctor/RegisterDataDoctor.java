@@ -1,4 +1,4 @@
-package med.helper.api.doctor;
+package med.helper.api.models.doctor;
 
 import med.helper.api.address.DataAddress;
 
