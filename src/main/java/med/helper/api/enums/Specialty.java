@@ -1,4 +1,4 @@
-package med.helper.api.models.doctor;
+package med.helper.api.enums;
 
 public enum Specialty {
     ORTHOPEDICS,

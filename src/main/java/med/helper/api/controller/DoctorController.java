@@ -1,7 +1,7 @@
 package med.helper.api.controller;
 
 import med.helper.api.models.doctor.Doctor;
-import med.helper.api.models.doctor.DoctorRepository;
+import med.helper.api.repository.DoctorRepository;
 import med.helper.api.models.doctor.RegisterDataDoctor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

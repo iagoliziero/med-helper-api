@@ -3,6 +3,7 @@ package med.helper.api.models.doctor;
 import jakarta.persistence.*;
 import lombok.*;
 import med.helper.api.address.Address;
+import med.helper.api.enums.Specialty;
 
 @Table(name = "doctors")
 @Entity(name = "Doctor")
