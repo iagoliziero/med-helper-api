@@ -5,7 +5,7 @@ import lombok.*;
 import med.helper.api.address.Address;
 import med.helper.api.enums.Specialty;
 
-@Table(name = "doctors")
+@Table(name = "doctor")
 @Entity(name = "Doctor")
 @Getter
 @NoArgsConstructor
