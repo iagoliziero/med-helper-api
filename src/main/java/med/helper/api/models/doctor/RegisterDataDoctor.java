@@ -9,17 +9,10 @@ import med.helper.api.address.DataAddress;
 import med.helper.api.enums.Specialty;
 
 public record RegisterDataDoctor(
-        @NotBlank
-        String name,
-        @NotBlank
-        @Email
-        String email,
-        @NotBlank
-        @Pattern(regexp = "\\d{4,6}")
-        String crm,
-        @NotNull
-        Specialty specialty,
-        @NotNull
-        @Valid
-        DataAddress address) {
+        @NotBlank String name,
+        @NotBlank @Email String email,
+        @NotBlank String phone,
+        @NotBlank @Pattern(regexp = "\\d{4,6}") String crm,
+        @NotNull Specialty specialty,
+        @NotNull @Valid DataAddress address) {
 }
