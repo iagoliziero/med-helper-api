@@ -6,7 +6,7 @@ import med.helper.api.address.Address;
 import med.helper.api.dto.RegisterDataDoctor;
 import med.helper.api.enums.Specialty;
 
-@Table(name = "doctor")
+@Table(name = "doctors")
 @Entity(name = "Doctor")
 @Getter
 @NoArgsConstructor
