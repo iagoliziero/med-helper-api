@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.*;
 import med.helper.api.address.Address;
-import med.helper.api.controller.UpdateDataDoctor;
+import med.helper.api.dto.UpdateDataDoctor;
 import med.helper.api.dto.RegisterDataDoctor;
 import med.helper.api.enums.Specialty;
 

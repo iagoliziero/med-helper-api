@@ -1,9 +1,7 @@
 package med.helper.api.address;
 
 import jakarta.persistence.Embeddable;
-import jakarta.validation.Valid;
 import lombok.*;
-import med.helper.api.controller.UpdateDataDoctor;
 
 @Embeddable
 @Getter

@@ -3,6 +3,7 @@ package med.helper.api.controller;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import med.helper.api.dto.ListDataDoctor;
+import med.helper.api.dto.UpdateDataDoctor;
 import med.helper.api.models.doctor.Doctor;
 import med.helper.api.dto.RegisterDataDoctor;
 import med.helper.api.repository.DoctorRepository;
@@ -11,8 +12,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/doctor")
