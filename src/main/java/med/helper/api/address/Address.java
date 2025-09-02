@@ -1,7 +1,9 @@
 package med.helper.api.address;
 
 import jakarta.persistence.Embeddable;
+import jakarta.validation.Valid;
 import lombok.*;
+import med.helper.api.controller.UpdateDataDoctor;
 
 @Embeddable
 @Getter
@@ -26,5 +28,35 @@ public class Address {
         this.state = address.state();
         this.number = address.number();
         this.complement = address.complement();
+    }
+
+    public void updateInfos(DataAddress data) {
+        if(data.street() != null) {
+            this.street = data.street();
+        }
+
+        if(data.neighborhood() != null) {
+            this.neighborhood = data.neighborhood();
+        }
+
+        if(data.zipCode() != null) {
+            this.zipCode = data.zipCode();
+        }
+
+        if(data.state() != null) {
+            this.state = data.state();
+        }
+
+        if(data.number() != null) {
+            this.number = data.number();
+        }
+
+        if(data.complement() != null) {
+            this.complement = data.complement();
+        }
+
+        if(data.complement() != null) {
+            this.complement = data.complement();
+        }
     }
 }

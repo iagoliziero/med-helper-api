@@ -31,4 +31,11 @@ public class DoctorController {
     public Page<ListDataDoctor> listDoctor(@PageableDefault(size = 10, sort = {"name"}) Pageable  pagination) {
         return repository.findAll(pagination).map(ListDataDoctor::new);
     }
+
+    @PutMapping
+    @Transactional
+    public void updateDoctor(@RequestBody @Valid UpdateDataDoctor data) {
+        var doctor = repository.getReferenceById(data.id());
+        doctor.infosUpdate(data);
+    }
 }
