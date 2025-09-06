@@ -1,5 +1,5 @@
-create table doctor (
-    id INT NOT NULL auto_increment,
+CREATE TABLE doctors (
+    id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
     crm VARCHAR(6) NOT NULL UNIQUE,
@@ -11,6 +11,7 @@ create table doctor (
     number VARCHAR(20),
     state CHAR(2) NOT NULL,
     city VARCHAR(100) NOT NULL,
-
+    phone VARCHAR(20) NOT NULL,
+    active TINYINT NOT NULL DEFAULT 1,
     PRIMARY KEY(id)
 );

@@ -31,7 +31,7 @@ public class Doctor {
     private Address address;
 
     public Doctor(RegisterDataDoctor data) {
-
+        this.name = data.name();
         this.email = data.email();
         this.phone = data.phone();
         this.crm = data.crm();
