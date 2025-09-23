@@ -56,4 +56,10 @@ public class DoctorController {
         doctor.inactive();
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity detailsDoctor(@PathVariable Long id) {
+        var doctor = repository.getReferenceById(id);
+        return ResponseEntity.ok(new DataDoctorDetails(doctor));
+    }
 }
