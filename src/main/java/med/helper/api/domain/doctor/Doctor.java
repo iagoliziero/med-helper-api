@@ -1,12 +1,10 @@
-package med.helper.api.models.doctor;
+package med.helper.api.domain.doctor;
 
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.*;
-import med.helper.api.address.Address;
-import med.helper.api.dto.UpdateDataDoctor;
-import med.helper.api.dto.RegisterDataDoctor;
-import med.helper.api.enums.Specialty;
+import med.helper.api.domain.address.Address;
+import med.helper.api.domain.doctor.enums.Specialty;
 
 @Table(name = "doctors")
 @Entity(name = "Doctor")

@@ -2,12 +2,12 @@ package med.helper.api.controller;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
-import med.helper.api.dto.DataDoctorDetails;
-import med.helper.api.dto.ListDataDoctor;
-import med.helper.api.dto.UpdateDataDoctor;
-import med.helper.api.models.doctor.Doctor;
-import med.helper.api.dto.RegisterDataDoctor;
-import med.helper.api.repository.DoctorRepository;
+import med.helper.api.domain.doctor.DataDoctorDetails;
+import med.helper.api.domain.doctor.ListDataDoctor;
+import med.helper.api.domain.doctor.UpdateDataDoctor;
+import med.helper.api.domain.doctor.Doctor;
+import med.helper.api.domain.doctor.RegisterDataDoctor;
+import med.helper.api.domain.doctor.DoctorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

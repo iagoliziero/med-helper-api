@@ -1,4 +1,4 @@
-package med.helper.api.address;
+package med.helper.api.domain.address;
 
 import jakarta.persistence.Embeddable;
 import lombok.*;
