@@ -2,6 +2,8 @@ package med.helper.api.infra;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -11,5 +13,17 @@ public class TreatmentError {
     @ExceptionHandler(EntityNotFoundException.class)
     public ResponseEntity treatmentError404() {
         return ResponseEntity.notFound().build();
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity treatmentError400(MethodArgumentNotValidException ex) {
+        var errors = ex.getFieldErrors();
+        return ResponseEntity.badRequest().body(errors.stream().map(DataErrorValidate::new).toList());
+    }
+
+    private record DataErrorValidate(String field, String message) {
+        public DataErrorValidate(FieldError error) {
+            this(error.getField(), error.getDefaultMessage());
+        }
     }
 }
