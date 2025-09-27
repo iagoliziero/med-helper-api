@@ -1,5 +1,6 @@
-package med.helper.api.domain.doctor;
+package med.helper.api.domain.doctor.dto;
 
+import med.helper.api.domain.doctor.Doctor;
 import med.helper.api.domain.doctor.enums.Specialty;
 
 public record ListDataDoctor(Long id, String name, String email, String crm, Specialty specialty) {

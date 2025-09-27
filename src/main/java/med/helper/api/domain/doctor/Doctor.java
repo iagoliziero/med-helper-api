@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.*;
 import med.helper.api.domain.address.Address;
+import med.helper.api.domain.doctor.dto.RegisterDataDoctor;
+import med.helper.api.domain.doctor.dto.UpdateDataDoctor;
 import med.helper.api.domain.doctor.enums.Specialty;
 
 @Table(name = "doctors")

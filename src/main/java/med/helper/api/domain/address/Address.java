@@ -2,6 +2,7 @@ package med.helper.api.domain.address;
 
 import jakarta.persistence.Embeddable;
 import lombok.*;
+import med.helper.api.domain.address.dto.DataAddress;
 
 @Embeddable
 @Getter
