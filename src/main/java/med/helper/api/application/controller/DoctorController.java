@@ -1,4 +1,4 @@
-package med.helper.api.controller;
+package med.helper.api.application.controller;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
